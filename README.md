@@ -117,3 +117,107 @@
 
 
 
+# Задача C. По следам ошибок
+
+
+# Шаги работы:
+
+
+
+<img width="785" alt="Screenshot 2024-04-26 at 11 03 07" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/dbea1aed-a669-46c3-9e4d-0b683a2bc6dc">
+
+
+
+1. Вбиваю в поисковике агрокекстрой
+
+
+2. Перехожу на страничку в вк
+
+
+3. и перехожу на ссылку сайта агрокекстроя
+
+
+
+<img width="347" alt="Screenshot 2024-04-26 at 11 22 05" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/791c682a-5ca1-47a1-95eb-c9be17d376a6">
+
+
+4. Приписываю к концу названия сайта private
+
+
+
+<img width="756" alt="Screenshot 2024-04-26 at 11 22 53" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/5db76403-7827-43c3-8c89-c9e558c82213">
+
+
+
+5. Переносит на данную страницу сайта, после чего переходим по первой ссылке
+
+
+
+<img width="442" alt="Screenshot 2024-04-26 at 11 24 17" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/bba22abc-6a93-4e98-b4f3-b6888f3d104a">
+
+
+
+6. После того как перешли по ссылке в месте где написана локация сервера /certs
+
+
+
+<img width="474" alt="Screenshot 2024-04-26 at 11 26 48" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/6dc2c15f-0167-4b1c-9b9d-1de34196c066">
+
+
+
+7. В поисковике вписываем вместо private вписываем certs нажимаем enter
+
+
+
+<img width="814" alt="Screenshot 2024-04-26 at 11 29 02" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/af1e679a-43c0-4bbc-a614-d483eccb84df">
+
+
+
+8. После чего меня перенесло на страничку в которой есть флаг из слов "ugra_keep_your_secrets_close"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
