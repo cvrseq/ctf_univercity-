@@ -34,8 +34,7 @@
 5. В итоге нашел флаг
 
 
-<img width="541" alt="Screenshot 2024-04-26 at 09 47 17" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/74a20e0b-ea8c-4300-84e7-b794d158226a![Uploading Screenshot 2024-04-26 at 10.00.37.png…]()
-">
+<img width="541" alt="Screenshot 2024-04-26 at 09 47 17" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/74a20e0b-ea8c-4300-84e7-b794d158226a!">
 
 
 # Задача B. Только для персонала
