@@ -177,6 +177,205 @@
 
 
 
+# Задача D. Бенефактор Контрафакт
+
+
+# Шаги работы:
+
+
+
+<img width="753" alt="Screenshot 2024-04-26 at 11 33 24" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/3a4c29cf-b4c9-4c7f-acf0-beb79089d97e">
+
+
+
+1. Заходим на сайт агрокекстроя
+
+
+
+<img width="357" alt="Screenshot 2024-04-27 at 13 16 39" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/6ba30e04-af01-4c10-95b2-8e49d7d10409">
+
+
+
+2. После чего листаем в самый низ сайта и сохраняем данные фотографии
+
+
+
+<img width="456" alt="Screenshot 2024-04-27 at 13 17 01" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/332ca7b3-2e56-428c-8ab4-f1aa222883dc">
+
+
+
+3. После чего заходим на сайта metadataonline
+
+
+
+<img width="609" alt="Screenshot 2024-04-27 at 13 19 23" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/544e1973-6e5b-4c83-b889-62a4f8f4f95e">
+
+
+
+4. И вставляем туда загруженную фотографию
+
+
+5. Ищем автора фотографии
+
+
+
+5. После чего ищем домен с именем автора
+
+
+
+6. Заходим на сайт namecheck.com и вставляем туда имя автора
+
+
+
+<img width="1238" alt="Screenshot 2024-04-27 at 13 24 34" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/ea705816-be6e-4016-89b9-6f4e4e827cce">
+
+
+
+7. Нашли домены на имя автора 
+
+
+
+<img width="1146" alt="Screenshot 2024-04-27 at 13 28 09" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/0acd3248-0371-4cd6-97e2-36dc505628c7">
+
+
+
+8. Переходим на один из доменов, который называется prorabsemurg.livejournal.com
+
+
+
+<img width="1238" alt="Screenshot 2024-04-27 at 13 24 34" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/8c702b49-8ff4-48d0-99a2-0a83d6c2fd38">
+
+
+
+9. Листая ниже наткнулся на фотографии, которые уже мне были знакомы
+
+
+
+<img width="733" alt="Screenshot 2024-04-27 at 13 32 12" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/b508e373-2dea-46b6-9ce4-44471c1289e2">
+
+
+
+9. После тщательного просмотра каждой странички записей автора я нашел фотографию флагом
+
+
+
+<img width="770" alt="Screenshot 2024-04-27 at 13 34 01" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/1f52816d-644f-4a55-9c5a-9b1c66a213a6">
+
+
+
+================================================================================================================================================================================================
+
+
+
+Дальше я решил пройти главу "ПРОГРАММИРОВАНИЕ"
+
+
+
+# Задача А. Отдохните!
+
+
+
+# Шаги работы: 
+
+
+
+<img width="796" alt="Screenshot 2024-04-27 at 17 13 22" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/58db6852-1ae7-43ae-8696-185f24874d89">
+
+
+
+1. Первым делом я зашел в терминал
+
+
+
+2. У меня стоит продвинутый терминал, который называется iterm2
+
+
+
+3. Вводим команду puthon3, чтобы открыть IDE(среду разработки внутри терминала)
+
+
+
+<img width="845" alt="Screenshot 2024-04-27 at 17 16 27" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/d3781770-890e-4fc4-9f32-15f44bef84b2">
+
+
+
+4. Пишем программму, которая циклически должна выводить слова
+
+
+
+<img width="749" alt="Screenshot 2024-04-27 at 17 19 36" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/f4b1856d-8070-4906-b915-ea7ab5de62d4">
+
+
+
+
+<img width="743" alt="Screenshot 2024-04-27 at 17 19 53" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/b1fc785e-de14-4dc6-928e-4d94d41632eb">
+
+
+
+5. Получили флаг предварительно убрав последний символ "_"
+
+
+
+<img width="764" alt="Screenshot 2024-04-27 at 17 21 13" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/9bd7ac86-5338-48e0-88dd-581d919b1c20">
+
+
+
+# Задача B. Редирект
+# Шаги работы:
+
+
+
+<img width="643" alt="Screenshot 2024-04-27 at 17 22 11" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/c771ffa2-f64e-441e-865a-958186d6ed24">
+
+
+
+1. Заходим в терминал и включаем IDE
+
+
+
+2. После чего начинаем писать код
+
+
+
+3. После длительных попыток все же флаг был найден предварительно скачав библиотеку requests через команду pip3 install requests
+
+
+
+<img width="738" alt="Screenshot 2024-04-27 at 17 49 29" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/0a1506d7-6108-49b0-b28d-085eb1bdeeae">
+
+
+
+
+<img width="700" alt="Screenshot 2024-04-27 at 17 50 51" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/7da3be09-8696-43e0-b74d-9002245f5b2b">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
