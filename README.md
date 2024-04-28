@@ -370,7 +370,7 @@
 
 
 
-2. Видим, что открылось множество jpeg файлов
+2. Видим, что открылось множество jpg файлов
 
 
 
@@ -382,7 +382,456 @@
 
 
 
-4. 
+4. Я импортировал библиотеку glob и метод glob, который позволяет получать списки файлов в директории прямо как bash 
+
+
+
+![Screenshot 2024-04-28 at 16 45 13](https://github.com/cvrseq/ctf_univercity-/assets/152638273/12c798d8-b648-4de3-9c77-c18c5635bd7d)ё
+
+
+
+5. Заметим, что координаты файлов отстают друг от друга на 16 ед. (возможно это координаты крайней точки пазла)
+
+
+
+6. Возможно размер изображения также равен 16 х 16
+
+
+
+7. Качаем библиотеку Image
+
+
+
+![Screenshot 2024-04-28 at 16 52 23](https://github.com/cvrseq/ctf_univercity-/assets/152638273/a00a753d-d4a4-4003-a76f-efe7d9d9b4ae)
+
+
+
+8. Теория о размере была верна
+
+
+
+![Screenshot 2024-04-28 at 16 55 00](https://github.com/cvrseq/ctf_univercity-/assets/152638273/72e97391-9870-418b-8b37-84f5ec73c556)
+
+
+
+9. Готовый код
+
+    
+
+![Screenshot 2024-04-28 at 17 05 46](https://github.com/cvrseq/ctf_univercity-/assets/152638273/07ab56d0-7fe0-4c3a-bc47-f59a14380938)
+
+
+
+10. Флаг найден
+
+
+
+![Screenshot 2024-04-28 at 17 06 56](https://github.com/cvrseq/ctf_univercity-/assets/152638273/cbcecb47-0b14-4ab5-8e83-b7d31cd49c40)
+
+
+
+# Задача А. Безопасный банк
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-28 at 20 14 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/286981e4-b31b-41a9-8169-cea2ce3730ed)
+
+
+
+1. Переходим по ссылке и нас перебрасывает на сайт
+
+
+
+![Screenshot 2024-04-28 at 20 19 54](https://github.com/cvrseq/ctf_univercity-/assets/152638273/aa61bf7f-857d-477a-98d6-8a5868150312)
+
+
+
+2. После неудачных попыток войти 
+
+
+
+3. Начинаем изучать работу сайта через инспекцию элементов сайта
+
+
+
+![Screenshot 2024-04-28 at 20 25 07](https://github.com/cvrseq/ctf_univercity-/assets/152638273/df0aa11e-d8d6-46fa-ac1b-63121ede224d)
+
+
+
+4. Видим что после попытки зайти на сайт аунтефикатор выдает значение false
+
+
+
+5. Меняем данное значение на true 
+
+
+
+![Screenshot 2024-04-28 at 20 27 31](https://github.com/cvrseq/ctf_univercity-/assets/152638273/bbb2ac51-c4ea-4dcf-b809-920b69d19c49)
+
+
+
+6. Обновляем страницу и получаем наш флаг
+
+
+
+# Задача B. Точечный удар
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-28 at 20 30 08](https://github.com/cvrseq/ctf_univercity-/assets/152638273/46bd2e94-af89-41ba-9601-b054eeffac05)
+
+
+
+1. Дана ссылка на сайт, перейдем по ней
+
+
+
+2. 
+
+
+
+![Screenshot 2024-04-28 at 20 33 17](https://github.com/cvrseq/ctf_univercity-/assets/152638273/1fb5abf2-c36b-4f78-ad4a-49478926232d)
+
+
+
+
+![Screenshot 2024-04-28 at 20 37 47](https://github.com/cvrseq/ctf_univercity-/assets/152638273/fadec0ac-16b4-428b-8c01-1a0c4de623a2)
+
+
+
+ 3. Видим, что заголовок файла имеет файловое расширение txt
+
+ 
+ 
+ 4. Пробуем менять url
+
+ 
+ 
+ 5. Для теста пробуем ввести, что угодно 
+
+
+
+![Screenshot 2024-04-28 at 20 50 20](https://github.com/cvrseq/ctf_univercity-/assets/152638273/ff3bfde7-225c-4937-9f6e-ca53671a47b2)
+
+
+
+6. Файл file_get_contents(aафыафаыффп): failed to open stream:. Это значит, что работа была произведена на языке php так как file_get_contents читает содержимое в строку
+
+
+
+7. Пробуем ввести в url что-то с раширением .php
+
+
+
+![Screenshot 2024-04-28 at 20 56 13](https://github.com/cvrseq/ctf_univercity-/assets/152638273/7d7e5706-a514-490c-b67e-7decaf2ce2de)
+
+
+
+![Screenshot 2024-04-28 at 21 13 46](https://github.com/cvrseq/ctf_univercity-/assets/152638273/0454b59c-682b-480a-b986-815fe5e440c9)
+
+
+
+8. Появилось четыре стрелочки back
+
+
+
+![Screenshot 2024-04-28 at 21 14 58](https://github.com/cvrseq/ctf_univercity-/assets/152638273/86986099-5cd5-4217-9f51-f44ac2f4bda0)
+
+
+
+9. В исходном коде видем php теги и снова убеждаемся о том, что был применен язык php
+
+
+
+10. Снова вводим в url что-то  
+
+
+
+![Screenshot 2024-04-28 at 21 17 34](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b13aba50-b3cd-4568-b8ef-d1dc206c35ed)
+
+
+
+11. Видим полный путь /var/www/html/src/files.php
+
+
+
+12. Меняем снова url на путь src/files.php
+
+
+
+![Screenshot 2024-04-28 at 21 19 07](https://github.com/cvrseq/ctf_univercity-/assets/152638273/f63ec507-8b4d-4de2-8a3e-38cbccd7087b)
+
+
+
+13. Попробуем зайти с через url в etc/passwd
+
+
+
+![Screenshot 2024-04-28 at 21 22 56](https://github.com/cvrseq/ctf_univercity-/assets/152638273/37354b11-934a-4c02-aebc-537b91d340c0)
+
+
+
+14. Получаем флаг
+
+
+
+![Screenshot 2024-04-28 at 21 24 41](https://github.com/cvrseq/ctf_univercity-/assets/152638273/4a9b0517-dc1b-4045-b256-9b941ebd3696)
+
+
+
+# Задача C. Гологизмы
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-28 at 21 27 09](https://github.com/cvrseq/ctf_univercity-/assets/152638273/df4c01e9-a048-45bf-8f94-825f36a9db70)
+
+
+
+1. Дана ссылка, переходим по ней
+
+
+
+2. Нас перебрасывает на сайт 
+
+
+
+![Screenshot 2024-04-28 at 21 29 06](https://github.com/cvrseq/ctf_univercity-/assets/152638273/470ff27f-265c-4a8b-9915-f28ac082f629)
+
+
+
+3. При каждом тарифе получаем ошибки
+
+
+
+![Screenshot 2024-04-28 at 21 30 02](https://github.com/cvrseq/ctf_univercity-/assets/152638273/9d0e2de3-3597-49d2-90a9-5dd03040fbe4)
+
+
+
+4. В куки файлах ничего не хранится 
+
+
+
+![Screenshot 2024-04-28 at 21 31 12](https://github.com/cvrseq/ctf_univercity-/assets/152638273/75255a98-812d-4b64-ab4d-36184eb76862)
+
+
+
+5. Так как сайт издает звуки и у него есть качественные анимации, следовательно без языка js необошлось
+
+
+
+6. Действительно, в страницу встроенн файл с расширением js
+
+
+
+
+![Screenshot 2024-04-28 at 22 29 40](https://github.com/cvrseq/ctf_univercity-/assets/152638273/087ca70e-2a7b-4f20-938e-81325a37abde)
+
+
+
+7. Переходим в данный файл
+
+
+
+8. Попробуем вызвать функцию голубые крови 
+
+
+
+![Screenshot 2024-04-28 at 22 31 54](https://github.com/cvrseq/ctf_univercity-/assets/152638273/24bcf438-a4df-4dd8-82ad-dde45fb31891)
+
+
+
+
+![Screenshot 2024-04-28 at 22 33 25](https://github.com/cvrseq/ctf_univercity-/assets/152638273/265ac1f2-d69d-499e-b5a8-fcfb9a41946d)
+
+
+
+9. Получаем флаг
+
+
+
+![Screenshot 2024-04-28 at 22 33 43](https://github.com/cvrseq/ctf_univercity-/assets/152638273/24d194c7-755e-4d0f-882b-294326851f88)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
