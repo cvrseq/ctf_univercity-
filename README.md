@@ -665,6 +665,186 @@
 
 
 
+# Задача D. Платные уроки
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-29 at 17 48 26](https://github.com/cvrseq/ctf_univercity-/assets/152638273/9c66e435-402c-4a8f-9d97-a5abf844552d)
+
+
+
+1. Переходим по данной ссылке и нас перебрасывает на сайт
+
+
+
+![Screenshot 2024-04-29 at 17 51 34](https://github.com/cvrseq/ctf_univercity-/assets/152638273/fb87360c-1480-46bc-b6f3-6fc31902eafa)
+
+
+
+![Screenshot 2024-04-29 at 17 52 28](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e0262927-45ef-442e-9403-957cce691ca2)
+
+
+
+2. Вводим любое название купона
+
+
+
+![Screenshot 2024-04-29 at 17 53 19](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b93b049d-fae3-4f74-88d3-b41115c31644)
+
+
+
+3. Можно предположить, что Daniel Stroud как специалист в sql, хранит купоны в базе данных
+
+
+
+4. Так как в базе данных sql есть изъяны о которых рассказывалось в методичке, пробуем ввести кавычку
+
+
+
+![Screenshot 2024-04-29 at 17 58 04](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e113c5d1-bc25-4c77-8f6d-1184f1ef1a75)
+
+
+
+5. Часто у таблиц есть колонка с названием id, проверим данную теорию
+
+
+
+![Screenshot 2024-04-29 at 18 02 00](https://github.com/cvrseq/ctf_univercity-/assets/152638273/15c6f46f-cd6f-4e14-ab81-40641a439a49)
+
+
+
+6. Видимо на столбце сервера используется несколько столбцов, но мы используем только один
+
+
+
+7. Для эксперимента поробуем продублировать id 
+
+
+
+![Screenshot 2024-04-29 at 18 15 33](https://github.com/cvrseq/ctf_univercity-/assets/152638273/367caed7-ca50-4f6a-8331-6605a2934b01)
+
+
+
+8. Ограничим кол-во результатов с помощью лимит
+
+
+
+![Screenshot 2024-04-29 at 18 17 12](https://github.com/cvrseq/ctf_univercity-/assets/152638273/3aba99d5-4d2f-4406-b58d-134fb0ade11d)
+
+
+
+9. Попробуем использовать название купончика в качестве вывода 
+
+
+
+![Screenshot 2024-04-29 at 18 24 06](https://github.com/cvrseq/ctf_univercity-/assets/152638273/5802855b-4009-468d-88a9-26b3d8aaaf1a)
+
+
+
+10. Воспользуемся оператором offset для перебора существующих
+
+
+11. Получаем флаг
+
+
+
+![Screenshot 2024-04-29 at 18 25 47](https://github.com/cvrseq/ctf_univercity-/assets/152638273/2f05188d-f615-4498-9261-edbe6106ebe8)
+
+
+
+# Дальше я перешел к главе, которая называется Криптография
+
+
+
+# Задача А. Не Цезарь
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-30 at 00 40 01](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b895cf00-9eca-4c09-bd6b-da3e689c9ae1)
+
+
+
+1. Используем инструмент dcodefr
+
+
+
+![Screenshot 2024-04-30 at 00 43 06](https://github.com/cvrseq/ctf_univercity-/assets/152638273/699f6a2f-a978-4ace-8b9d-e9b7fe9a8b1b)
+
+
+
+2. Переходим в раздел цезарь и вводим туда наше скопированное сообщение
+
+
+
+![Screenshot 2024-04-30 at 00 44 25](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b088639d-c52d-42df-b95e-5b48adbede98)
+
+
+3. Флаг найден 
+![Screenshot 2024-04-30 at 00 45 46](https://github.com/cvrseq/ctf_univercity-/assets/152638273/0e387e38-2c15-45de-b7d7-a22d6430976f)
+
+
+
+# Задача B. Золотая таска
+
+
+
+# Шаги работы: 
+
+
+
+![Screenshot 2024-04-30 at 00 47 11](https://github.com/cvrseq/ctf_univercity-/assets/152638273/30b500c1-f326-49e1-a349-b29cd4bd4ee7)
+
+
+
+1. Используем инструмент cyberchef
+
+
+
+![Screenshot 2024-04-30 at 00 49 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/f9ef3c0e-4a17-4d8e-9e89-9305ba8a028f)
+
+
+
+2. Вставляем в инпут данное сообщение и используем метод to basе, которая переводит в текст из любой другой СС
+
+
+
+![Screenshot 2024-04-30 at 00 54 00](https://github.com/cvrseq/ctf_univercity-/assets/152638273/c1afb97e-4190-4d8d-8bb5-afaaf01d950d)
+
+
+
+3. Используем метод hex и получаем флаг(читаем с таблицы аски)
+
+
+
+# Задача C. Вращайте барабан
+
+
+
+# Шаги работы: 
+
+
+
+![Screenshot 2024-04-30 at 00 55 42](https://github.com/cvrseq/ctf_univercity-/assets/152638273/59aed33c-c312-4970-bf1b-3daf54ee887e)
+
+
+
+1. Загружаем пнг файл и получаем данное изображение 
+
+
+
+![Screenshot 2024-04-30 at 00 56 16](https://github.com/cvrseq/ctf_univercity-/assets/152638273/21d3ebfb-9b73-4bdc-8192-97011b1af5e4)
+
+
+
+2. 
 
 
 
@@ -691,7 +871,52 @@
 
 
 
+# Дальше я перешел к главе, которая называется Реверс-инжиниринг
 
+
+
+# Задача B. Хакер
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-29 at 22 02 58](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e586eb24-9160-4c82-881c-1022a8e14bf4)
+
+
+
+
+1. Через пакетный менеджер brew скачиваем wine, который может открыть exe файлы
+
+
+
+2. brew install --cask wine-stable
+
+
+
+3. После прописываем команду, которая включает кодирувку ru utf-8 'LC_ALL=ru_RU.UTF-8 wine '/Users/aleksandrsuslin/Downloads/Project2.exe''
+
+
+
+4. Приложение открылось с кодировкой utf-8
+
+
+
+![Screenshot 2024-04-29 at 22 28 27](https://github.com/cvrseq/ctf_univercity-/assets/152638273/08568df9-954d-40e1-b26e-bc7205a83448)
+
+
+
+5. Самый прибыльный пункт оказался третий
+
+
+
+![Screenshot 2024-04-29 at 22 29 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/c372857b-6188-4b85-931b-8982e958c320)
+
+
+
+6. После зажатия клавиши return, я заметил, что в игру выиграть невозможно 
 
 
 
