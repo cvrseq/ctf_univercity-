@@ -844,25 +844,94 @@
 
 
 
-2. Я замечаю, что в состав барабана входят символы, которые являются составом флага_
+2. Я замечаю, что в состав барабана входят символы, которые являются составом флага
 
 
 
+3. Захожу в xls macos
 
 
 
+4. Переписываю с u все символы в таблицу
 
 
 
+5. Используя Данные формулы 
 
 
 
+<img width="400" alt="Screenshot 2024-04-30 at 15 33 40" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/8cf4b278-5986-4107-bd03-08c388729000">
 
 
 
+<img width="362" alt="Screenshot 2024-04-30 at 15 33 50" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/c7fe8178-8386-4b9d-a022-6e7d73a29340">
+
+
+ 6. Получаем флаг
 
 
 
+<img width="584" alt="Screenshot 2024-04-30 at 15 31 53" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/b0b88003-2066-4ca6-8ee6-6c737d49aa38">
+
+
+
+# Задача D. Одна беда хорошо…
+
+
+
+# Шаги работы: 
+
+
+
+<img width="551" alt="Screenshot 2024-04-30 at 15 36 38" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/e773a914-9873-4e90-8f01-f5808176689b">
+
+
+
+1. Нам понадобится инструмент cyberchef 
+
+
+
+<img width="1495" alt="Screenshot 2024-04-30 at 15 38 25" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/bbb9b726-c0ab-419a-9580-40b7a24b4230">
+
+
+
+2. Раскодируем из 16-ричной СС используя from hex 
+
+
+
+<img width="283" alt="Screenshot 2024-04-30 at 15 39 42" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/158a890f-e1ef-42e2-9543-3f04d053e999">
+
+
+
+3. Используем фильтр to hexdumb чтобы лучше были видны данные 
+
+
+
+<img width="697" alt="Screenshot 2024-04-30 at 15 41 23" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/4b69dab9-e00a-4bde-9224-5b7af7a7a4ec">
+
+
+
+4. Удалим из списка hexdumb и заксорим с помощью фильтра xor bruteforce
+
+
+
+<img width="695" alt="Screenshot 2024-04-30 at 15 43 44" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/96831ebb-abf7-4f3d-bf81-af6f1a150f2f">
+
+
+
+5. Увеличим длину ключа до 2-х и так как мы знаем, что каждый флаг начинается с ugra_ пишем это  параметрах фильтра
+
+
+
+<img width="1014" alt="Screenshot 2024-04-30 at 15 45 57" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/27a8dd91-4e5d-467d-97ba-51e2bcc4e321">
+
+
+
+6. Флаг найден
+
+
+
+<img width="748" alt="Screenshot 2024-04-30 at 15 49 53" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/537c8589-85eb-40a6-bcb2-aacf3abaec6c">
 
 
 
@@ -946,10 +1015,24 @@
 10. Меняем данное значение на любое, которое равно 1 млн или больше
 
 
+    
+
+<img width="756" alt="Screenshot 2024-04-30 at 15 01 17" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/4c09332c-cae4-413d-bf3c-9653c96eae0a">
 
 
----------------
 
+<img width="971" alt="Screenshot 2024-04-30 at 15 04 02" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/6addec65-eeac-4c7b-b0bf-efac2f2819f6">
+
+
+11. После покупки квартиры нажимаем ок и получаем флаг
+
+
+
+<img width="596" alt="Screenshot 2024-04-30 at 15 04 21" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/560eeb65-d9cd-4b12-8a3a-e0920cd747ff">
+
+
+
+<img width="630" alt="Screenshot 2024-04-30 at 15 06 03" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/0514ee3b-78a1-477a-839a-de6500aa289c">
 
 
 
@@ -1045,9 +1128,15 @@
 
 
 
+<img width="1086" alt="Screenshot 2024-04-30 at 14 57 31" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/962243b3-a191-4f6d-8e1e-dc3f05a4ecb2">
 
 
 
+14. Вот наш флаг
+
+
+
+<img width="732" alt="Screenshot 2024-04-30 at 14 58 59" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/ebe7d861-04a5-4c16-8d7a-3ef0c082cb15">
 
 
 
