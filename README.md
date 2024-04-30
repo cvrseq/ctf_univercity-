@@ -989,41 +989,59 @@
 
 
 
+5. И еще вероятнее всего данная страница связана с языком js
 
 
 
+6. Зайдем в инспектор и проверим это  
 
 
 
+<img width="747" alt="Screenshot 2024-04-30 at 13 45 46" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/b0be4471-3189-4263-9803-69a4e5b76fc8">
 
 
 
+7. Для большего удобства откроем сурс код на отдельной страничке 
 
 
 
+<img width="727" alt="Screenshot 2024-04-30 at 13 47 20" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/a303b043-fa7c-4d6a-92d9-b980b6dfa74e">
 
 
 
+8. Замечаем что данные строчки сурс кода страницы очень похожи на язык пайтон
 
 
 
+<img width="728" alt="Screenshot 2024-04-30 at 13 47 56" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/384299a4-b1f7-480c-abc5-7a33611c7908">
 
 
 
+9. Скопируем данный кусок кода в ide 
 
 
 
+<img width="1078" alt="Screenshot 2024-04-30 at 13 49 46" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/607966f1-ce07-4439-a36d-710fee7cb0e3">
 
 
 
+10. Длина нашего флага должна быть 36 элементов по кол-ву символов массива KEY
 
 
 
+11. Данная конструкция говорит о том, что происходит цикл по длину ключа, то есть 0 - 35 и и i-й эленты мы считываем по таблице ascii
 
 
 
+<img width="321" alt="Screenshot 2024-04-30 at 13 55 38" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/a0c834a4-e355-4a60-8ace-fde1748bdd54">
 
 
+
+12. В конечном счете, если все 36 проверок пройдет то флаг верен
+
+
+
+13. Давайте изменим наш код
 
 
 
