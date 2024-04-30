@@ -1404,24 +1404,221 @@
 
 
 
+# Задача А. Во все поля
+
+
+
+# Шаги работы: 
+
+
+
+![Screenshot 2024-04-30 at 20 57 49](https://github.com/cvrseq/ctf_univercity-/assets/152638273/a7598d14-a8c4-4286-afec-bb54f3e85f79)
+
+
+
+1. Сохраняем данный файл 
+
+
+
+![Screenshot 2024-04-30 at 21 00 43](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e7b70268-0123-4d92-aede-e8fccf518e7a)
+
+
+
+2. Так как задача по стеганографии и само название задачи во все поля, можно предположить, что нам предстоит работа с метаданными 
+
+
+
+3. Используем сайт jimpl.com и загружаем туда наше фото 
+
+
+
+![Screenshot 2024-04-30 at 21 06 19](https://github.com/cvrseq/ctf_univercity-/assets/152638273/678678c5-9b1c-4916-86a9-dfe02638131d)
+
+
+
+4. Видим части флага после изучения метаданных
+
+
+
+![Screenshot 2024-04-30 at 21 07 45](https://github.com/cvrseq/ctf_univercity-/assets/152638273/bc798922-dd09-4be0-b1d3-fe605d506852)
+
+
+
+![Screenshot 2024-04-30 at 21 08 36](https://github.com/cvrseq/ctf_univercity-/assets/152638273/dd44f24e-7337-4c8b-ab65-e454dec7db2e)
+
+
+
+![Screenshot 2024-04-30 at 21 08 47](https://github.com/cvrseq/ctf_univercity-/assets/152638273/78233161-0b0d-4313-bed5-b56d20c71dcb)
+
+
+
+![Screenshot 2024-04-30 at 21 09 23](https://github.com/cvrseq/ctf_univercity-/assets/152638273/f8a835d7-cbe0-4769-b8ab-745176cc015d)
+
+
+
+5. Флаг найден
+
+
+
+![Screenshot 2024-04-30 at 21 12 00](https://github.com/cvrseq/ctf_univercity-/assets/152638273/68cb4358-0f8b-4ed7-9c46-32ac9d73a377)
+
+
+
+# Задача B. Коды-кодики
+
+
+
+# Шаги работы: 
+
+
+
+![Screenshot 2024-04-30 at 21 13 11](https://github.com/cvrseq/ctf_univercity-/assets/152638273/4db062cd-1a5a-4b18-b59c-3ea2f2ba0331)
+
+
+
+1. Сохраняем данный файл 
+
+
+
+![Screenshot 2024-04-30 at 21 14 04](https://github.com/cvrseq/ctf_univercity-/assets/152638273/ae0a561d-e791-4d78-acf7-1d8401d9f823)
+
+
+
+2. Видим фотографию, однако принято, что фотография хранится в формате jpg используя сжатие с потерями, это значит только одно, что изображение хранит в себе информацию, которую мы не видим 
+
+
+
+
+3. Для этого используем сайт aperisolve.com
+
+
+
+4. Загружаем туда нашу фотографию 
+
+
+
+![Screenshot 2024-04-30 at 21 18 44](https://github.com/cvrseq/ctf_univercity-/assets/152638273/62f82b86-c049-4eed-9da6-2bf85b39e2a3)
+
+
+
+5. Листая ниже в пункте blue видим qr код
+
+
+
+![Screenshot 2024-04-30 at 21 19 34](https://github.com/cvrseq/ctf_univercity-/assets/152638273/07182ed8-0fda-4be4-bc77-c7e5922cb34a)
 
 
 
 
 
+![Screenshot 2024-04-30 at 21 20 52](https://github.com/cvrseq/ctf_univercity-/assets/152638273/dc9e8f62-7ae4-4763-a04e-27001b71685f)
 
 
 
 
+6. Через смартфон сканируем данный qr и полуяаем флаг
+
+
+
+![flag](https://github.com/cvrseq/ctf_univercity-/assets/152638273/a2c11d83-b35c-4798-ab5c-90a9661ca4d9)
+
+
+
+![Screenshot 2024-04-30 at 21 24 00](https://github.com/cvrseq/ctf_univercity-/assets/152638273/16454e6e-f197-46c9-8f54-5228951b9d98)
 
 
 
 
+# Задача C. Скрытый текст
+
+
+
+# Шаги работы: 
+
+
+
+![Screenshot 2024-04-30 at 21 24 46](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e67faa63-42a7-4bf6-ab90-12a40435a496)
+
+
+
+1. Скачиваем данный pdf файл 
+
+
+
+2. В момент того как я начал выделять текст, обнаружилось, что выделяется нулевой символ или по-другому невидимый
+
+
+
+3. Предлогается найти символ u на месте пустого символа 
+
+
+
+![Screenshot 2024-04-30 at 21 27 48](https://github.com/cvrseq/ctf_univercity-/assets/152638273/6c1f2b13-bff3-45ac-a010-14f41e45ca7e)
+
+
+
+4. Проделав данную схему несколько раз я понял, что эти символы части флага 
+
+
+
+![Screenshot 2024-04-30 at 21 28 24](https://github.com/cvrseq/ctf_univercity-/assets/152638273/626e2a66-a156-464e-82f2-065c7d0c7168)
+
+
+
+5. Флаг успешно сдан
+
+
+
+![Screenshot 2024-04-30 at 21 32 18](https://github.com/cvrseq/ctf_univercity-/assets/152638273/c9decc1d-dfa0-4fbf-ba19-f82f017cb452)
+
+
+
+# Задача D. OOXML
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-30 at 21 33 58](https://github.com/cvrseq/ctf_univercity-/assets/152638273/60ee8034-15f4-43d9-93c3-5ce85c56dbdd)
+
+
+
+1. Скачаем данный файл с расширением docx
+
+
+
+![Screenshot 2024-04-30 at 21 34 53](https://github.com/cvrseq/ctf_univercity-/assets/152638273/094ad85c-4c99-4293-b635-b52e75142b9b)
+
+
+
+2. Загуглив данный вопрос мы понимаем, что это zip format
+
+
+
+3. Изменим формат файла 
+
+
+
+![Screenshot 2024-04-30 at 21 38 21](https://github.com/cvrseq/ctf_univercity-/assets/152638273/aadbfba2-a30d-4349-a909-d9c88ab8246e)
+
+
+
+4. Разархивируя видим разные папки 
+
+
+![Screenshot 2024-04-30 at 21 42 53](https://github.com/cvrseq/ctf_univercity-/assets/152638273/6d19e754-0d0c-451e-a878-30dbf755b4d6)
+
+
+
+5. Перейдя в папку word -> -rels -> flag.txt Получаем флаг
 
 
 
 
+![Screenshot 2024-04-30 at 21 44 48](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e9899235-3560-48db-8996-de25af63cbf0)
 
 
 
-
+![Screenshot 2024-04-30 at 21 45 18](https://github.com/cvrseq/ctf_univercity-/assets/152638273/9d4a3410-b39a-48ae-ba9d-2f096d63de52)
