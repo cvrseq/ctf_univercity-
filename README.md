@@ -1142,97 +1142,265 @@
 
 
 
+# Задача B. Лес густой
 
 
 
+# Шаги работы:
 
 
 
+<img width="495" alt="Screenshot 2024-04-30 at 16 48 41" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/81b69b09-f08e-41b9-a7a2-29450bd975e2">
 
+   
 
+1. Скачиваем файл
 
 
 
+2. Получаем текстовый файл  
 
 
 
+<img width="721" alt="Screenshot 2024-04-30 at 16 52 53" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/9176cee3-53f7-40aa-adc5-01b786f06de5">
 
 
 
+3. Скачиваем текстовый редактор geany, который может работать с объемными по памяти сообщениями и файлами
 
 
 
+4. Прописываем в терминале (в моем случае iterm2, потому что терминал на макос является оболочкой) через пакетный менеджер brew "brew install geany"
 
 
 
+5. Открываем данный файл через geany и в поисковой строке вписываем поиск символов по серчю ugra_
 
 
 
+<img width="894" alt="Screenshot 2024-04-30 at 17 01 07" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/58017be6-991a-4dad-8c49-a5c26d8a863c">
 
 
 
+6. Получили флаг
 
 
 
+<img width="475" alt="Screenshot 2024-04-30 at 17 01 27" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/96dff21a-d919-42ce-87d8-435ef345e6d8">
 
 
 
 
+# Задача C. Загрузка
 
 
 
+# Шаги работы:
 
 
 
+<img width="502" alt="Screenshot 2024-04-30 at 17 02 15" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/ea5fbb6c-54dc-45ae-82af-ca95dcadbf69">
 
 
 
+1. Загружаем данный файл 
 
 
 
+2. Но перед этим скачиваем wireshark через терминал и пакетный менеджер brew
 
 
 
+<img width="646" alt="Screenshot 2024-04-30 at 17 05 57" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/72d64fb9-5b76-40d7-9d55-a6175cf37f61">
 
 
 
+3. Открываем наш файл с помощью wireshark
 
 
 
+<img width="1494" alt="Screenshot 2024-04-30 at 17 44 03" src="https://github.com/cvrseq/ctf_univercity-/assets/152638273/41fcaf00-400e-453c-bcde-fc4cf63f2481">
 
 
 
+4. Нас интересуют https хосты
 
 
 
+5. Восьмой пакет обозначает, что пользователь отправляет на сервер действие скачивания 
 
 
 
+6. Пролистаем в самый низ и увидим хост "200 ок", в нем скомбинированы все серии пакетов 
 
 
 
+7. Чтобы посмотреть в более удобном виде, перейдем в пункт folow -> http stream
 
+![Screenshot 2024-04-30 at 20 04 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/203cafdd-a44d-496a-8ec4-a2f5169028e6)
 
 
 
+8. Видим два окна с запросом и ответом
 
 
 
+![Screenshot 2024-04-30 at 20 05 52](https://github.com/cvrseq/ctf_univercity-/assets/152638273/c8250599-8d6b-49a3-9760-479c77fef976)
 
 
 
+9. Сохраним файл в меню export objects
 
 
 
+![Screenshot 2024-04-30 at 20 07 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/88b51c99-3f84-463d-a3cd-b3fa6f2311af)
 
 
 
+10. Между выбором сохранить главную страницу или файлик, выбираем файлик
 
 
 
+![Screenshot 2024-04-30 at 20 08 19](https://github.com/cvrseq/ctf_univercity-/assets/152638273/6757ff64-1f6d-4129-96f7-a700ed42973c)
 
 
 
+11. Замечаем, что у файлика нет никакого расширения 
+
+
+
+12. С помощью утилиты файл, узнаем формат файла
+
+
+
+![Screenshot 2024-04-30 at 20 13 44](https://github.com/cvrseq/ctf_univercity-/assets/152638273/7f060b52-dd90-4a13-999f-9169edf137f9)
+
+
+
+13. Данный формат нам неизветен, поэтому загуглим данный формат
+
+
+
+![Screenshot 2024-04-30 at 20 16 05](https://github.com/cvrseq/ctf_univercity-/assets/152638273/fd56146c-b07f-4ecc-a846-e951483feb90)
+
+
+
+14. Виндоус расширение ico, которое используется в иконах приложений и тд
+
+
+
+15. С помощью терминала делаем формат файла ico
+
+
+
+![Screenshot 2024-04-30 at 20 18 14](https://github.com/cvrseq/ctf_univercity-/assets/152638273/0f89b568-3871-4749-a728-620acc659ebb)
+
+
+
+16. Открываем данный файл и видим флаг
+
+
+
+![Screenshot 2024-04-30 at 20 19 37](https://github.com/cvrseq/ctf_univercity-/assets/152638273/ae99c534-0ba1-4744-be60-45640b77b6dd)
+
+
+
+![Screenshot 2024-04-30 at 20 21 13](https://github.com/cvrseq/ctf_univercity-/assets/152638273/3678eab4-93e4-4fec-a148-14cd2ee7165c)
+
+
+
+# Задача D. Сетевая атака
+
+
+
+# Шаги работы:
+
+
+
+![Screenshot 2024-04-30 at 20 22 12](https://github.com/cvrseq/ctf_univercity-/assets/152638273/687cad0f-55d4-4540-a87e-c341377b8f9e)
+
+
+
+1. Скачиваем данный файл
+
+
+
+2. Открываем данный файл с помощью нашего любимого wireshark
+
+
+
+![Screenshot 2024-04-30 at 20 23 57](https://github.com/cvrseq/ctf_univercity-/assets/152638273/4902fbec-8490-4d99-9cb5-c204fd231474)
+
+
+3. Даны 22к пакетов (много, похоже на дудос) :)
+
+
+
+4. Видим что в основном вся нагрузка идет на порт 443, данный порт является https хостом
+
+
+
+5. Что облегчить задачу используем метод statistics -> endpoint
+
+
+
+6. Видим все ip адреса
+
+
+
+![Screenshot 2024-04-30 at 20 29 05](https://github.com/cvrseq/ctf_univercity-/assets/152638273/e400d5aa-d899-4226-9121-660aad8a5d6c)
+
+
+
+7. Перейдем во вкладку tcp 
+
+
+
+![Screenshot 2024-04-30 at 20 30 45](https://github.com/cvrseq/ctf_univercity-/assets/152638273/2cea7464-b64b-4094-9765-d426203f82de)
+
+
+
+8. Меня заинтересовал данный порт, потому что он показывает, что основное кол-во соообщений было передано по хосту https 
+
+
+
+![Screenshot 2024-04-30 at 20 32 54](https://github.com/cvrseq/ctf_univercity-/assets/152638273/388d74de-7dc4-4b65-b014-f941acfb35ce)
+
+
+
+9. Отфильтруем пакеты по хосту
+
+
+
+![Screenshot 2024-04-30 at 20 34 50](https://github.com/cvrseq/ctf_univercity-/assets/152638273/779cbd8d-52dd-402c-882f-b03ddb7e9547)
+
+
+
+10. Мы сейчас наблюдаем чистую переписку двух хостов
+
+
+
+11. Мы можем заметить, что данные значения идут по порядковому номеру и возможно это индексы, то есть на 00 символ u на 02 символ g и так далее
+
+
+
+![Screenshot 2024-04-30 at 20 37 06](https://github.com/cvrseq/ctf_univercity-/assets/152638273/aa68b009-a5f6-41a4-b5fe-973b54d6c860)
+
+
+
+12. Данная теория была верна 
+
+
+
+![Screenshot 2024-04-30 at 20 40 32](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b8de2c51-3d52-4ca6-abe9-c334a51b31c2)
+
+
+
+13. Соберем флаг в ручную
+
+
+
+![Screenshot 2024-04-30 at 20 50 03](https://github.com/cvrseq/ctf_univercity-/assets/152638273/b6464312-8e4e-478d-96c6-596a9224aee7)
 
 
 
